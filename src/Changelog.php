@@ -492,7 +492,7 @@ class Changelog
      */
     protected function getItemKey(string $string): string
     {
-        return strtolower(preg_replace('/[^a-zA-Z0-9_-]+/', '', $string));
+        return strtolower(preg_replace('/[^A-zА-я0-9_-]+/', '', $string));
     }
 
     /**
